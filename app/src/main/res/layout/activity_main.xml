@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="245dp"
+        android:layout_height="90dp"
+        android:text="PROPINATOR 2000"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="396dp"
+        android:layout_height="71dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.025" />
+
+    <LinearLayout
+        android:id="@+id/pad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="170dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/total">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/siete"
+                android:text="7"
+                style="@style/Buttons" />
+
+            <Button
+                android:id="@+id/ocho"
+                style="@style/Buttons"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/nueve"
+                style="@style/Buttons"
+                android:text="9" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cuatro"
+                style="@style/Buttons"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/cinco"
+                style="@style/Buttons"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/seis"
+                style="@style/Buttons"
+                android:text="6" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/uno"
+                style="@style/Buttons"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/dos"
+                style="@style/Buttons"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/tres"
+                style="@style/Buttons"
+                android:text="3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/coma"
+                style="@style/Buttons"
+                android:text="," />
+
+            <Button
+                android:id="@+id/cero"
+                style="@style/Buttons"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/limpiar"
+                style="@style/Buttons"
+                android:text="AC" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/igual"
+                style="@style/Buttons"
+                android:layout_weight="1"
+                android:text="Calcular" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/total2"
+        android:layout_width="346dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="20dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/RadioGroup"/>
+
+    <RadioGroup
+        android:id="@+id/RadioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/total2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pad">
+
+        <RadioButton
+            android:id="@+id/mal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="malo" />
+
+        <RadioButton
+            android:id="@+id/normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="25dp"
+            android:text="normal" />
+
+        <RadioButton
+            android:id="@+id/bueno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="bueno" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
